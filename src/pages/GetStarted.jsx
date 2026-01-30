@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Hero3 from "../component/Hero3";
 
 const GetStartedPage = () => {
   const [selectedPlan, setSelectedPlan] = useState("free");
@@ -21,23 +22,8 @@ const GetStartedPage = () => {
       style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
     >
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 py-20">
-        <div className="w-[90%] max-w-[1000px] mx-auto flex flex-col gap-y-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h1 className="font-bold text-5xl md:text-6xl text-white mb-4">
-              Get Started Today
-            </h1>
-            <p className="text-white text-xl md:text-2xl max-w-[700px] mx-auto">
-              Join thousands of students accessing verified study materials and
-              past questions
-            </p>
-          </motion.div>
-        </div>
+      <section className="w-full relative flex justify-center items-center h-[30em] bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 py-20 mb-4">
+        <Hero3 vid={"/videos/vid3.mp4"} />
       </section>
 
       {/* How It Works Section */}
