@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../component/Hero";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -11,12 +10,13 @@ import {
   Users,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import Hero from "../component/Hero";
 
 const Home = () => {
   return (
     <>
       <div>
-        <Hero />
+        <Hero vid={"/videos/vid3.mp4"} />
         <section
           className="flex justify-center py-20 items-center w-full"
           style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
@@ -59,7 +59,7 @@ const Home = () => {
                 platform
               </p>
             </div>
-            <div className="h-fit grid gap-4 grid-cols-1 sm:grid-cols-2 grid-rows-2 xl:grid-cols-3 xl:grid-rows-1">
+            <div className="h-fit grid gap-4 grid-cols-1 sm:grid-cols-2 grid-rows-2 md:grid-cols-3 xl:grid-rows-1">
               {[
                 { icon: <Search />, h2Val: "5,000+", pVal: "Study Materials" },
                 { icon: <Award />, h2Val: "1,200+", pVal: "Active Students" },
@@ -91,11 +91,11 @@ const Home = () => {
           </div>
         </section>
         <section
-          className="flex justify-center py-20 items-center w-full"
+          className="flex justify-center pb-30 items-center w-full"
           style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
         >
           <div className="w-[90%] flex flex-col justify-center items-center gap-y-9">
-            <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
               {[
                 { name: "Computer Science", icon: "💻" },
                 { name: "Mass Communication", icon: "📺" },
@@ -106,6 +106,8 @@ const Home = () => {
                 { name: "Electrical Engineering", icon: "⚡" },
                 { name: "Medicine", icon: "🩺" },
                 { name: "Pharmacy", icon: "💊" },
+                { name: "Psychology", icon: "🧠" },
+                { name: "Psychology", icon: "🧠" },
                 { name: "Psychology", icon: "🧠" },
               ].map((dept, i) => (
                 <motion.a
@@ -140,7 +142,7 @@ const Home = () => {
         </section>
         <section className="w-full flex justify-center items-center h-fit py-20 bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800">
           <div className="w-[90%] flex justify-center items-center flex-col gap-y-6">
-            <h2 className="font-bold text-4xl text-white text-shadow-2xs">
+            <h2 className="font-bold text-4xl text-white text-shadow-2xs text-center">
               Never Beg for Past Questions Again
             </h2>
             <p className="text-white text-[16px] font-medium max-w-[500px] text-center">
