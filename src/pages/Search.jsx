@@ -110,7 +110,7 @@ const SearchPage = () => {
 
   return (
     <div
-      className="w-full min-h-screen h-screen bg-gray-50"
+      className="w-full min-h-screen bg-gray-50"
       style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
     >
       {/* Hero Section */}
