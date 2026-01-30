@@ -84,7 +84,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-2 group w-fitgit "
                   >
                     <ArrowRight className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
                     {link.label}
