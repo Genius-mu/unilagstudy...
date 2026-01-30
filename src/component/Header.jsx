@@ -284,7 +284,7 @@ const Header = () => {
       <header
         ref={headerRef}
         className={`w-full fixed left-0 z-50 flex flex-col justify-center items-center transition-all duration-500 ${
-          isScrolled ? "h-16 md:h-20" : "h-20 md:h-24"
+          isScrolled ? "h-16 md:h-20 bg-white" : "h-20 md:h-24"
         } bg-black/60 top-0 backdrop-blur-[12px] backdrop-saturate-150 shadow-2xl overflow-visible`}
         style={{
           "--mouse-x": `${mousePosition.x}%`,
@@ -339,7 +339,7 @@ const Header = () => {
                   isActiveLink(link.to)
                     ? "nav-link-active bg-blue-500/10"
                     : "hover:text-blue-400 hover:bg-white/5"
-                }`}
+                } ${isScrolled ? "text-black" : "text-white"}`}
                 style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
               >
                 {link.label}

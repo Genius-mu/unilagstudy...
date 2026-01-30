@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { Search, Upload } from "lucide-react";
 
-const Hero = () => {
+const Hero = ({ vid }) => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/vid3.mp4"
+        src={vid}
         autoPlay
         loop
         muted
@@ -52,7 +52,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="w-fit h-fit">
-                <img src="/svgs/svg2.svg" alt="" className="w-[24em] h-[24em]" />
+              <img src="/svgs/svg2.svg" alt="" className="w-[24em] h-[24em]" />
             </div>
           </div>
         </div>
