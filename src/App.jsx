@@ -7,6 +7,7 @@ import SearchPage from "./pages/Search";
 import UploadPage from "./pages/Upload";
 import LoginPage from "./pages/Login";
 import GetStartedPage from "./pages/GetStarted";
+import Courses from "./courses/Courses";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<GetStartedPage />} />
+          <Route path="/course/:id" element={<Courses />} />
         </Routes>
         <Footer />
       </div>

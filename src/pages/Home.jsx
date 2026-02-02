@@ -95,19 +95,19 @@ const Home = () => {
           style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
         >
           <div className="w-[90%] flex flex-col justify-center items-center gap-y-9">
-            <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
               {[
                 { name: "Computer Science", icon: "💻" },
+                { name: "Psysics", icon: "🧠" },
                 { name: "Mass Communication", icon: "📺" },
-                { name: "Law", icon: "⚖️" },
                 { name: "Business Admin", icon: "💼" },
                 { name: "Accounting", icon: "📊" },
                 { name: "Economics", icon: "📈" },
                 { name: "Electrical Engineering", icon: "⚡" },
                 { name: "Medicine", icon: "🩺" },
                 { name: "Pharmacy", icon: "💊" },
-                { name: "Psychology", icon: "🧠" },
-                { name: "Psychology", icon: "🧠" },
+                { name: "Law", icon: "⚖️" },
+                { name: "System Engineering", icon: "🧠" },
                 { name: "Psychology", icon: "🧠" },
               ].map((dept, i) => (
                 <motion.a

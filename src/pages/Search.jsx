@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Search, X, BookOpen, Download, Eye } from "lucide-react";
 import { motion } from "framer-motion";
 import Hero2 from "../component/Hero2";
+import { Link } from "react-router-dom";
 
 const SearchPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -35,58 +36,70 @@ const SearchPage = () => {
   // Sample materials data
   const materials = [
     {
-      id: 1,
-      title: "Data Structures and Algorithms Past Questions",
+      id: "cs",
+      // title: "Data Structures and Algorithms Past Questions",
+      title: "Computer Science Materials",
       department: "Computer Science",
       level: "200 Level",
       year: "2024",
       downloads: 234,
       views: 1200,
+      link: "/course/cs",
     },
     {
-      id: 2,
-      title: "Introduction to Mass Communication Theory",
-      department: "Mass Communication",
+      id: "physics",
+      // title: "Introduction to Physics",
+      title: "Physics Materials",
+      department: "Physics",
       level: "100 Level",
       year: "2023",
       downloads: 189,
       views: 890,
+      link: "/course/physics",
     },
     {
-      id: 3,
-      title: "Constitutional Law Past Questions",
+      id: "law",
+      // title: "Constitutional Law Past Questions",
+      title: "Law Materials",
       department: "Law",
       level: "300 Level",
       year: "2024",
       downloads: 456,
       views: 2100,
+      link: "/course/law",
     },
     {
-      id: 4,
-      title: "Financial Accounting Exam Questions",
+      id: "acc",
+      // title: "Financial Accounting Exam Questions",
+      title: "Accounting Materials",
       department: "Accounting",
       level: "200 Level",
       year: "2023",
       downloads: 312,
       views: 1450,
+      link: "/course/acc",
     },
     {
-      id: 5,
-      title: "Microeconomics Theory Notes",
+      id: "eco",
+      // title: "Microeconomics Theory Notes",
+      title: "Economics Materials",
       department: "Economics",
       level: "200 Level",
       year: "2024",
       downloads: 278,
       views: 1320,
+      link: "/course/eco",
     },
     {
-      id: 6,
-      title: "Circuit Analysis Past Questions",
+      id: "elec",
+      // title: "Circuit Analysis Past Questions",
+      title: "Electrical Engineering Materials",
       department: "Electrical Engineering",
       level: "300 Level",
       year: "2023",
       downloads: 198,
       views: 950,
+      link: "/course/elec",
     },
   ];
 
@@ -260,9 +273,12 @@ const SearchPage = () => {
                 </div>
 
                 {/* Action Button */}
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl font-semibold transition duration-300">
-                  View Material
-                </button>
+                <Link
+                  to={`/course/${material.id}`}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl font-semibold transition duration-300"
+                >
+                  View Materials
+                </Link>
               </motion.div>
             ))}
           </div>
