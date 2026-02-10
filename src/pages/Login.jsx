@@ -228,7 +228,7 @@ const LoginPage = () => {
             ].map((feature, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl shadow-md p-4 text-center"
+                className="bg-white rounded-xl py-10 md:py-0 shadow-md p-4 text-center"
               >
                 <div className="text-2xl mb-2">{feature.icon}</div>
                 <p className="text-sm font-semibold text-gray-700">

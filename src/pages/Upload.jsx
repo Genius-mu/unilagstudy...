@@ -323,7 +323,7 @@ const UploadPage = () => {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden bg-blue-600 py-20 md:py-28">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative z-10 w-[90%] max-w-[900px] mx-auto flex flex-col gap-y-6">
+        <div className="relative z-10 w-[90%] max-w-[900px] mt-9 md:mt-0 mx-auto flex flex-col gap-y-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

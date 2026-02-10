@@ -373,9 +373,13 @@ const Header = () => {
           >
             <div className="relative w-6 h-6">
               {isMenuOpen ? (
-                <X className="w-6 h-6 text-white absolute inset-0 scale-in" />
+                <X
+                  className={`w-6 h-6 ${isScrolled ? "text-black" : "text-white"} absolute inset-0 scale-in`}
+                />
               ) : (
-                <Menu className="w-6 h-6 text-white absolute inset-0 scale-in" />
+                <Menu
+                  className={`w-6 h-6 ${isScrolled ? "text-black" : "text-white"} absolute inset-0 scale-in`}
+                />
               )}
             </div>
             <div className="absolute inset-0 rounded-xl bg-blue-400/0 group-hover:bg-blue-400/10 transition-colors duration-300"></div>
